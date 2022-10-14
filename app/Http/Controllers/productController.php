@@ -16,7 +16,7 @@ class productController extends Controller
     {
         $productData = DB::table('products')->get();
 
-        return view('product.product' , ["data"=>$productData]);
+        return view('product.products' , ["data"=>$productData]);
     }
 
     /**
